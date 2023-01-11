@@ -1,6 +1,8 @@
+using ETicaretAPI.Application.Services;
 using ETicaretAPI.Application.Validators.Products;
 using ETicaretAPI.Infrastructure;
 using ETicaretAPI.Infrastructure.FÝlters;
+using ETicaretAPI.Infrastructure.Services;
 using ETicaretAPI.Persistence;
 using FluentValidation.AspNetCore;
 
@@ -23,8 +25,6 @@ builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-
 
 var app = builder.Build();
 
